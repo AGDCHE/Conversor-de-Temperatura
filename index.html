@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Bem vindo ao <br>Conversor de Temperatura!</h1>
+
+    <p>Olá,se você não sabe,mas,existem várias unidades de temperatura,mas,as principais são Celsius,Fahrenheit e
+        Kelvin, e o valor deles são bastante diferentes de como somos acostumados com o °C (Celsius).</p>
+
+    <div class="panel">
+
+        <div class="convert-from">
+
+            <label class="label">Converter de:</label>
+            <select id="currency-select">
+                <option value="celsius">Celsius</option>
+                 <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+
+        </div>
+
+        <div class="convert-to">
+
+            <label class="label">Converter para:</label>
+            <select id="currency-to-select">
+                <option value="fahrenheit">Fahrenheit</option>
+                 <option value="celsius">Celsius</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+
+        </div>
+
+        <label class="label">Valor:</label>
+
+        <input type="number" placeholder="Digite a temperatura" id="input-value">
+
+        <button onclick="convert()">Converter</button>
+
+        <div class="converted">
+
+            <div>
+                <label class="convert">conversão de: </label>
+                <p class="names" id="currency-name">Celsius</p>
+            </div>
+
+            <div>
+                <label class="convert">a converter: </label>
+                <p class="value" id="value">0 °C</p>
+            </div>
+
+        </div>
+
+        <div class="converted">
+
+            <div>
+                <label class="convert">conversão de: </label>
+                <p class="names" id="currency-to-name">Fahrenheit</p>
+            </div>
+
+            <div>
+                <label class="convert">a Converter: </label>
+                <p class="value" id="value-to-convert">0 °F</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <h2>Qual a diferença entre <br>Celsius, Fahrenheit e Kelvin?</h2>
+
+    <p>Celsius (°C): É a escala mais utilizada globalmente para fins do dia a dia. Ela define o ponto de congelamento da
+        água a 0°C e o ponto de ebulição a 100°C (ao nível do mar).</p>
+
+    <p>Fahrenheit (°F): Predominantemente usada nos Estados Unidos e alguns territórios associados.Ela define o ponto
+        de congelamento da água a 32°F e o ponto de ebulição a 212°F.</p>
+
+    <p>Kelvin (K): É a unidade de temperatura do Sistema Internacional de Unidades (SI) e é amplamente utilizada em
+        contextos científicos e de engenharia. A escala Kelvin é absoluta, o que significa que 0 K (zero absoluto) é o
+        ponto onde cessa todo o movimento molecular, e não existem temperaturas negativas.</p>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
